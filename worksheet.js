@@ -50,12 +50,6 @@ const firstName = characters.map((element) => element.name.split(" ")[0]);
 console.log("First Name Array Using Map:");
 console.log(firstName);
 
-//***REDUCE***
-//1. Get total mass of all characters
-//2. Get total height of all characters
-//3. Get total number of characters by eye color
-//4. Get total number of characters in all the character names
-
 //***FILTER***
 //1. Get characters with mass greater than 80
 const filteredBymass = characters.filter((character) => {
@@ -136,3 +130,32 @@ const isSkinny = characters.some((character) => {
 });
 console.log("Is Skinny??");
 console.log(isSkinny);
+
+//***REDUCE***
+//1. Get total mass of all characters
+const totalMass = characters.reduce((massSum, character) => {
+  return massSum + character.mass;
+}, 0);
+console.log("Total Mass:" + totalMass);
+//2. Get total height of all characters
+const totalHeight = characters.reduce((heightSum, character) => {
+  return heightSum + character.height;
+}, 0);
+console.log("Total Height:" + totalHeight);
+//3. Get total number of characters by eye color
+const totalCharacters = characters.reduce((numChar, character) => {
+  if (numChar[character.eye_color]) {
+    numChar[character.eye_color]++;
+  } else {
+    numChar[character.eye_color] = 1;
+  }
+
+  return numChar;
+}, {});
+console.log(totalCharacters);
+//4. Get total number of characters in all the character names
+const totalNameChar = characters.reduce((totalChar,character)=>{
+    return totalChar + character.name.length
+},0)
+console.log(totalNameChar);
+
