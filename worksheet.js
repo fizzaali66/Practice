@@ -99,11 +99,6 @@ const sortByGender = characters.sort((a, b) => {
 });
 console.log("Sorted By Male First:");
 console.log(sortByGender);
-//***EVERY***
-//1. Does every character have blue eyes?
-//2. Does every character have mass more than 40?
-//3. Is every character shorter than 200?
-//4. Is every character male?
 
 //***SOME***
 //1. Is there at least one male character?
@@ -159,3 +154,8 @@ const totalNameChar = characters.reduce((totalChar,character)=>{
 },0)
 console.log(totalNameChar);
 
+//***EVERY***
+//1. Does every character have blue eyes?
+//2. Does every character have mass more than 40?
+//3. Is every character shorter than 200?
+//4. Is every character male?
