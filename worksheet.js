@@ -39,7 +39,13 @@ const heights = characters.map(element => element.height);
 console.log("Height Array Using Map:")
 console.log(heights)
 //3. Get array of objects with just name and height properties
+const nameheights = characters.map(element => ({name: element.name,height: element.height}));
+console.log("Name and Height Array Using Map:")
+console.log(nameheights)
 //4. Get array of all first names
+const firstName = characters.map(element => element.name.split(" ")[0]);
+console.log("First Name Array Using Map:")
+console.log(firstName)
 
 //***REDUCE***
 //1. Get total mass of all characters
