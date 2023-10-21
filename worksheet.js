@@ -100,32 +100,6 @@ const sortByGender = characters.sort((a, b) => {
 console.log("Sorted By Male First:");
 console.log(sortByGender);
 
-//***SOME***
-//1. Is there at least one male character?
-const hasMale = characters.some((character) => {
-  return character.gender == "male";
-});
-console.log("Has Male??");
-console.log(hasMale);
-//2. Is there at least one character with blue eyes?
-const hasBlueEyes = characters.some((character) => {
-  return character.eye_color == "blue";
-});
-console.log("Has BlueEyed Character??");
-console.log(hasBlueEyes);
-//3. Is there at least one character taller than 210?
-const isTaller = characters.some((character) => {
-  return character.height > 210;
-});
-console.log("Is Taller then 210??");
-console.log(isTaller);
-//4. Is there at least one character that has mass less than 50?
-const isSkinny = characters.some((character) => {
-  return character.mass < 50;
-});
-console.log("Is Skinny??");
-console.log(isSkinny);
-
 //***REDUCE***
 //1. Get total mass of all characters
 const totalMass = characters.reduce((massSum, character) => {
@@ -154,8 +128,42 @@ const totalNameChar = characters.reduce((totalChar,character)=>{
 },0)
 console.log(totalNameChar);
 
+//***SOME***
+//1. Is there at least one male character?
+const hasMale = characters.some((character) => {
+    return character.gender == "male";
+  });
+  console.log("Has Male??");
+  console.log(hasMale);
+  //2. Is there at least one character with blue eyes?
+  const hasBlueEyes = characters.some((character) => {
+    return character.eye_color == "blue";
+  });
+  console.log("Has BlueEyed Character??");
+  console.log(hasBlueEyes);
+  //3. Is there at least one character taller than 210?
+  const isTaller = characters.some((character) => {
+    return character.height > 210;
+  });
+  console.log("Is Taller then 210??");
+  console.log(isTaller);
+  //4. Is there at least one character that has mass less than 50?
+  const isSkinny = characters.some((character) => {
+    return character.mass < 50;
+  });
+  console.log("Is Skinny??");
+  console.log(isSkinny);
+
 //***EVERY***
 //1. Does every character have blue eyes?
+const allBlue = characters.every(character=>character.eye_color=="blue")
+console.log("All Have Blue Eyes??"+ allBlue);
 //2. Does every character have mass more than 40?
+const allOver40 = characters.every(character=>character.mass>40)
+console.log("All Charcter over 40KG??"+allOver40)
 //3. Is every character shorter than 200?
+const allBelow200 = characters.every(character=>character.height<200)
+console.log("All Below 200 CM??"+allBelow200)
 //4. Is every character male?
+const allMale = characters.every(character=>character.gender == "male")
+console.log("All Male??"+allMale)
