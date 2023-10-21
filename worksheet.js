@@ -93,6 +93,26 @@ console.log(filteredByFemale)
 
 //***SOME***
 //1. Is there at least one male character?
+const hasMale = characters.some( character => {
+    return character.gender == "male";
+})
+console.log("Has Male??")
+console.log(hasMale);
 //2. Is there at least one character with blue eyes?
+const hasBlueEyes = characters.some( character => {
+    return character.eye_color == "blue";
+})
+console.log("Has BlueEyed Character??")
+console.log(hasBlueEyes);
 //3. Is there at least one character taller than 210?
+const isTaller = characters.some( character => {
+    return character.height > 210;
+})
+console.log("Is Taller then 210??")
+console.log(isTaller);
 //4. Is there at least one character that has mass less than 50?
+const isSkinny = characters.some( character => {
+    return character.mass < 50;
+})
+console.log("Is Skinny??")
+console.log(isSkinny);
