@@ -1,41 +1,4 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
 
-Project:    Folioflix
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[Table of contents]
-
-1. Body
-2. Navigation / #navbar
-3. banner section / #banner
-4. service section / #service
-5.  Skills section / #Skills
-6. Portfolio section / #Portfolio
-7. testimonials section / #testimonials
-8. Blog section/ #Blog
-9. Contact section /#Contact
-10. weight footer section / #weight footer
-11. footer section / #footer
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-# [Color codes]
-
-    --primary-color:#3f396d;
-    --secondary-color:#07003b;
-    --accent:#fca61f;
-    --text-color: #7d7789;
-    --off-white-color: #f0f4ff;
-    --light-purple-color:#6f34fe;
-    --white-color:#fff;
-    --light-grey-color:#f2f2ff;
-# */
-/*------------------------------------------------------------------
-[Typography]
-
-Body copy:     'Josefin Sans', sans-serif;
-
--------------------------------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600;700&family=Lato&display=swap');
 *{
